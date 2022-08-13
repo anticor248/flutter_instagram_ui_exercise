@@ -1,4 +1,10 @@
-# instagram_ui_exercise
+
+# Flutter Instagram UI Exercise with Pages and Other Stuff
+
+instagram_ui_exercise
+
+![Screenshot_2022-08-13-23-47-43-377_com example instagram_ui_exercise](https://user-images.githubusercontent.com/7489371/184510312-126a8c96-de5b-4323-a65a-aa6841d1b391.jpg)
+
 
 A new Flutter project.
 
