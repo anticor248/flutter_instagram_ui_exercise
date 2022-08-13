@@ -79,7 +79,9 @@ class _HomeScreenState extends State<HomeScreen> {
 
           //TODO Posts Here
 
-          UserPost(),
+          UserPost(
+            userPostName: 'MSGOX',
+          ),
         ],
       ),
     );
