@@ -43,7 +43,7 @@ class _MainScreenState extends State<MainScreen> {
               });
             },
             activeColor: Colors.black, // selected icon and text color
-
+            haptic: false,
             tabBackgroundColor:
                 Colors.grey.shade300, // selected tab background color
 

@@ -74,13 +74,18 @@ class _HomeScreenState extends State<HomeScreen> {
                   scrollDirection: Axis.horizontal,
                   itemCount: people.length,
                   itemBuilder: (context, index) {
-                    return BubbleStories(storiesName: people[index]);
+                    return Center(
+                        child: BubbleStories(storiesName: people[index]));
                   })),
 
           //TODO Posts Here
 
-          UserPost(
-            userPostName: 'MSGOX',
+          Expanded(
+            child: ListView.builder(
+                itemCount: people.length,
+                itemBuilder: (context, index) {
+                  return UserPost(userPostName: people[index]);
+                }),
           ),
         ],
       ),
