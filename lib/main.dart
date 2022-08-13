@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:instagram_ui_exercise/home_page.dart';
+
+import 'main_screen.dart';
 
 void main() => runApp(MyApp());
 
@@ -15,7 +16,7 @@ class _MyAppState extends State<MyApp> {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: HomePage(),
+      home: MainScreen(),
       theme: ThemeData(
         primarySwatch: Colors.grey,
       ),
