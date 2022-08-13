@@ -24,7 +24,10 @@ class _HomePageState extends State<HomePage> {
           children: [
             Text(
               'Instagram',
-              style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
+              style: TextStyle(
+                fontSize: 24,
+                fontWeight: FontWeight.bold,
+              ),
             ),
             Row(
               children: [
