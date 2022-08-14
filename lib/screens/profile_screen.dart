@@ -1,3 +1,4 @@
+import 'package:eva_icons_flutter/eva_icons_flutter.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
@@ -37,9 +38,12 @@ class _ProfileScreenState extends State<ProfileScreen> {
                   children: [
                     Padding(
                       padding: const EdgeInsets.symmetric(horizontal: 20.0),
-                      child: Icon(Icons.add_circle_outline),
+                      child: Icon(
+                        EvaIcons.plusSquareOutline,
+                        size: 28,
+                      ),
                     ),
-                    Icon(Icons.menu),
+                    Icon(EvaIcons.moreVerticalOutline, size: 28),
                   ],
                 )
               ],
@@ -138,8 +142,9 @@ class _ProfileScreenState extends State<ProfileScreen> {
                         ElevatedButton(
                           onPressed: () {},
                           child: Icon(
-                            Icons.person_add_alt_outlined,
+                            EvaIcons.personAddOutline,
                             color: Colors.white,
+                            size: 24,
                           ),
                         )
                       ],
@@ -159,13 +164,22 @@ class _ProfileScreenState extends State<ProfileScreen> {
                     TabBar(
                       tabs: [
                         Tab(
-                          icon: Icon(Icons.grid_3x3_outlined),
+                          icon: Icon(
+                            EvaIcons.gridOutline,
+                            size: 28,
+                          ),
                         ),
                         Tab(
-                          icon: Icon(Icons.play_circle_outline_rounded),
+                          icon: Icon(
+                            EvaIcons.playCircleOutline,
+                            size: 28,
+                          ),
                         ),
                         Tab(
-                          icon: Icon(Icons.person_outline),
+                          icon: Icon(
+                            EvaIcons.personOutline,
+                            size: 28,
+                          ),
                         ),
                       ],
                     ),

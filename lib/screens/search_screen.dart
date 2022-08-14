@@ -1,3 +1,4 @@
+import 'package:eva_icons_flutter/eva_icons_flutter.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:instagram_ui_exercise/utils/explore_grid.dart';
@@ -28,7 +29,9 @@ class _SearchScreenState extends State<SearchScreen> {
             color: Colors.grey.shade300,
             child: Row(
               children: [
-                Icon(Icons.search),
+                Icon(
+                  EvaIcons.searchOutline,
+                ),
                 SizedBox(
                   width: 12,
                 ),

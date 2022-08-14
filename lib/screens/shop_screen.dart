@@ -1,3 +1,4 @@
+import 'package:eva_icons_flutter/eva_icons_flutter.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
@@ -37,9 +38,15 @@ class _ShopScreenState extends State<ShopScreen> {
                   children: [
                     Padding(
                       padding: const EdgeInsets.symmetric(horizontal: 20.0),
-                      child: Icon(Icons.favorite_outline),
+                      child: Icon(
+                        EvaIcons.heartOutline,
+                        size: 28,
+                      ),
                     ),
-                    Icon(Icons.messenger_outline),
+                    Icon(
+                      EvaIcons.messageCircleOutline,
+                      size: 28,
+                    ),
                   ],
                 ),
               ],
@@ -59,7 +66,10 @@ class _ShopScreenState extends State<ShopScreen> {
                 color: Colors.grey.shade300,
                 child: Row(
                   children: [
-                    Icon(Icons.search),
+                    Icon(
+                      EvaIcons.searchOutline,
+                      size: 28,
+                    ),
                     SizedBox(
                       width: 12,
                     ),

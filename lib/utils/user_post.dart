@@ -1,3 +1,4 @@
+import 'package:eva_icons_flutter/eva_icons_flutter.dart';
 import 'package:flutter/material.dart';
 
 class UserPost extends StatelessWidget {
@@ -35,7 +36,12 @@ class UserPost extends StatelessWidget {
               Column(
                 children: [
                   Row(
-                    children: [Icon(Icons.grid_view_outlined)],
+                    children: [
+                      Icon(
+                        EvaIcons.menu2,
+                        size: 28,
+                      )
+                    ],
                   ),
                 ],
               ),
@@ -59,21 +65,27 @@ class UserPost extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Icon(
-                    Icons.favorite_outline,
+                    EvaIcons.heartOutline,
                     size: 28,
                   ),
                   Padding(
                     padding: const EdgeInsets.symmetric(
                         horizontal: 12.0, vertical: 4),
-                    child: Icon(Icons.messenger_outline, size: 28),
+                    child: Icon(
+                      EvaIcons.messageCircleOutline,
+                      size: 28,
+                    ),
                   ),
                   Icon(
-                    Icons.send,
+                    EvaIcons.navigation2Outline,
                     size: 28,
                   )
                 ],
               ),
-              Icon(Icons.bookmark_border, size: 32)
+              Icon(
+                EvaIcons.bookmarkOutline,
+                size: 28,
+              ),
             ],
           ),
         ),

@@ -1,3 +1,4 @@
+import 'package:eva_icons_flutter/eva_icons_flutter.dart';
 import 'package:flutter/material.dart';
 import 'package:google_nav_bar/google_nav_bar.dart';
 
@@ -51,11 +52,27 @@ class _MainScreenState extends State<MainScreen> {
 
             padding: EdgeInsets.symmetric(horizontal: 24, vertical: 12),
             tabs: [
-              GButton(icon: Icons.home_outlined),
-              GButton(icon: Icons.search),
-              GButton(icon: Icons.play_circle_outline_rounded),
-              GButton(icon: Icons.shop_outlined),
-              GButton(icon: Icons.person_outline),
+              GButton(
+                  icon: _pageIndex == 0 ? EvaIcons.home : EvaIcons.homeOutline),
+              GButton(
+                  iconSize: 28,
+                  icon: _pageIndex == 1
+                      ? EvaIcons.search
+                      : EvaIcons.searchOutline),
+              GButton(
+                  iconSize: 28,
+                  icon:
+                      _pageIndex == 2 ? EvaIcons.video : EvaIcons.videoOutline),
+              GButton(
+                  iconSize: 28,
+                  icon: _pageIndex == 3
+                      ? EvaIcons.shoppingCart
+                      : EvaIcons.shoppingCartOutline),
+              GButton(
+                  iconSize: 28,
+                  icon: _pageIndex == 4
+                      ? EvaIcons.person
+                      : EvaIcons.personOutline),
             ],
           ),
         ),

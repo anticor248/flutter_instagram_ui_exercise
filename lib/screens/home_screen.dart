@@ -1,3 +1,4 @@
+import 'package:eva_icons_flutter/eva_icons_flutter.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:instagram_ui_exercise/utils/bubble_stories.dart';
@@ -50,12 +51,21 @@ class _HomeScreenState extends State<HomeScreen> {
             ),
             Row(
               children: [
-                Icon(Icons.add_circle_outline),
+                Icon(
+                  EvaIcons.plusSquareOutline,
+                  size: 28,
+                ),
                 Padding(
                   padding: const EdgeInsets.symmetric(horizontal: 20.0),
-                  child: Icon(Icons.favorite_outline),
+                  child: Icon(
+                    EvaIcons.heartOutline,
+                    size: 28,
+                  ),
                 ),
-                Icon(Icons.messenger_outline),
+                Icon(
+                  EvaIcons.messageCircleOutline,
+                  size: 28,
+                ),
               ],
             )
           ],
