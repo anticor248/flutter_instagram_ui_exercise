@@ -69,14 +69,15 @@ class _HomeScreenState extends State<HomeScreen> {
         children: [
           //TODO Stories Here
           Container(
-              height: 116,
-              child: ListView.builder(
-                  scrollDirection: Axis.horizontal,
-                  itemCount: people.length,
-                  itemBuilder: (context, index) {
-                    return Center(
-                        child: BubbleStories(storiesName: people[index]));
-                  })),
+            height: 116,
+            child: ListView.builder(
+              scrollDirection: Axis.horizontal,
+              itemCount: people.length,
+              itemBuilder: (context, index) {
+                return Center(child: BubbleStories(storiesName: people[index]));
+              },
+            ),
+          ),
 
           //TODO Posts Here
 

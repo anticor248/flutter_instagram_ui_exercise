@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
+
+import '../utils/shop_grid.dart';
 
 class ShopScreen extends StatefulWidget {
   const ShopScreen({Key? key}) : super(key: key);
@@ -11,8 +14,63 @@ class _ShopScreenState extends State<ShopScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Center(
-        child: Text('Shop'),
+      appBar: AppBar(
+        systemOverlayStyle: SystemUiOverlayStyle(
+          statusBarColor: Colors.transparent,
+          statusBarIconBrightness: Brightness.dark, // status bar icons' color
+        ),
+        backgroundColor: Colors.transparent,
+        elevation: 0,
+        title: Column(
+          children: [
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Text(
+                  'Shop',
+                  style: TextStyle(
+                    fontSize: 24,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+                Row(
+                  children: [
+                    Padding(
+                      padding: const EdgeInsets.symmetric(horizontal: 20.0),
+                      child: Icon(Icons.favorite_outline),
+                    ),
+                    Icon(Icons.messenger_outline),
+                  ],
+                ),
+              ],
+            ),
+          ],
+        ),
+      ),
+      body: Column(
+        children: [
+          //ShopScreen SearchBar Here
+          Padding(
+            padding: const EdgeInsets.symmetric(vertical: 8),
+            child: ClipRRect(
+              borderRadius: BorderRadius.circular(24),
+              child: Container(
+                padding: EdgeInsets.symmetric(horizontal: 16, vertical: 12),
+                color: Colors.grey.shade300,
+                child: Row(
+                  children: [
+                    Icon(Icons.search),
+                    SizedBox(
+                      width: 12,
+                    ),
+                    Text('Search'),
+                  ],
+                ),
+              ),
+            ),
+          ),
+          Expanded(child: ShopGrid()),
+        ],
       ),
     );
   }

@@ -1,13 +1,8 @@
 import 'package:flutter/material.dart';
 
-class ReelsScreen extends StatefulWidget {
-  const ReelsScreen({Key? key}) : super(key: key);
+class ProfilePinned extends StatelessWidget {
+  const ProfilePinned({Key? key}) : super(key: key);
 
-  @override
-  State<ReelsScreen> createState() => _ReelsScreenState();
-}
-
-class _ReelsScreenState extends State<ReelsScreen> {
   @override
   Widget build(BuildContext context) {
     return GridView.builder(
@@ -18,7 +13,7 @@ class _ReelsScreenState extends State<ReelsScreen> {
           return Padding(
             padding: const EdgeInsets.all(2.0),
             child: Container(
-              color: Colors.grey,
+              color: Colors.red,
             ),
           );
         });

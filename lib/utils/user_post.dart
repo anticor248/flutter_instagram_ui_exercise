@@ -32,8 +32,12 @@ class UserPost extends StatelessWidget {
                   )
                 ],
               ),
-              Row(
-                children: [Icon(Icons.grid_view_outlined)],
+              Column(
+                children: [
+                  Row(
+                    children: [Icon(Icons.grid_view_outlined)],
+                  ),
+                ],
               ),
             ],
           ),
